@@ -1,0 +1,120 @@
+site_name: Lick The Salt
+docs_dir: content
+nav:
+  - About: index.md
+  - Guides:
+      - guides/macos-setup.md
+      - guides/nginx-proxy-manager-udmp.md
+      - guides/rpi-k8s-talos-terraform.md
+  - Smart Home:
+      - smart-home/architecture.md
+      - smart-home/garage-door.md
+      - smart-home/switches.md
+  - Projects:
+      - projects/battery-backup.md
+      - projects/jeep.md
+  - Literary:
+      - literary/recommended-reading.md
+  - Blog:
+      - "2016":
+          - 2016/04/12/compiling-open-zwave-control-panel-on-a-raspberry-pi-3/index.md
+      - "2013":
+          - 2013/01/03/smart-guns-dangerously-dumb/index.md
+      - "2011":
+          - 2011/12/06/mail-checker-minus-or-why-are-you-maintaining-a-chrome-extension/index.md
+          - 2011/07/16/conversation-with-a-spam-bot/index.md
+      - "2010":
+          - 2010/11/17/dallas-makerspace-open-house/index.md
+          - 2010/08/19/compiling-bitcoin-on-ubuntu-10-04-lucid/index.md
+      - "2009":
+          - 2009/07/24/phishing-attempt-via-txt/index.md
+          - 2009/07/21/5-tips-on-being-an-effective-linux-admin/index.md
+          - 2009/07/06/windows-7-the-top-5-things-i-like/index.md
+          - 2009/07/06/fail-why-you-should-always-use-visudo/index.md
+          - 2009/07/01/firefox-3-5-impatiently-waiting/index.md
+          - 2009/04/20/tweaking-nagios-for-performance/index.md
+          - 2009/04/14/cooling-off/index.md
+          - 2009/04/09/birth-of-a-monster/index.md
+          - 2009/04/08/terrorists-dont-use-google-maps/index.md
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/andrewlecody
+    - icon: fontawesome/brands/github
+      link: https://github.com/aceat64
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/andrew-lecody-37307148/
+copyright: This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+plugins:
+  - glightbox
+  - search
+  - privacy
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+theme:
+  name: material
+  icon:
+    logo: material/wifi-strength-alert-outline
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: blue
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
