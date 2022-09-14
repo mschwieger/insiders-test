@@ -8,7 +8,6 @@ tags:
   - "nagios"
   - "ubuntu"
   - "work"
-glightbox: false
 ---
 
 # Tweaking Nagios For Performance

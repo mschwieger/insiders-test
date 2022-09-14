@@ -8,7 +8,6 @@ tags:
   - "raid"
   - "ubuntu"
   - "work"
-glightbox: false
 ---
 
 # Birth of a Monster

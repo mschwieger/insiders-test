@@ -29,7 +29,6 @@ copyright: This work is licensed under a <a rel="license" href="http://creativec
 plugins:
   - meta
   - blog
-  - glightbox
   - search
   - social
   - privacy

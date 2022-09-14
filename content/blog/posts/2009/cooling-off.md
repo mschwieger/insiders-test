@@ -6,7 +6,6 @@ tags:
   - "funny"
   - "linux"
   - "ubuntu"
-glightbox: false
 ---
 
 # Cooling Off

@@ -27,7 +27,7 @@ Some of these are not new features, the extremely popular 1911, which as been ar
 
 So if we've ruled out the possibility that guns just "go off", what is the root cause of these accidents? Negligence and poor safety practices. As with any dangerous piece of equipment (cars, table saws, fire, etc) there are safety rules that should be followed. For firearms, some of the most basic rules are:
 
-![Firearm Safety](images/1357160507202.jpg){ width="300" align=right loading=lazy }
+[![Firearm Safety](images/1357160507202.jpg){ width="300" align=right loading=lazy }](images/1357160507202.jpg)
 
 1. Treat every gun as if it is loaded.
 2. Don't point a gun at something unless you intend to shoot it.
@@ -59,7 +59,7 @@ You can't fix poor safety practices with technology, you can only fix them with 
 
 ## Smart guns are a solution in search of a problem
 
-![2007 CDC Unintentional Deaths](images/2007_CDC_unintentional_deaths.gif){ width="300" align=right loading=lazy }
+[![2007 CDC Unintentional Deaths](images/2007_CDC_unintentional_deaths.gif){ width="300" align=right loading=lazy }](images/2007_CDC_unintentional_deaths.gif)
 
 After hearing about some of the heartbreaking incidents such as Joseph Loughrey shooting his 7 year old son, you might be wondering, how common are these tragedies? Fortunately, [according to the CDC](http://webappa.cdc.gov/sasweb/ncipc/leadcaus10.html) they are exceedingly rare, roughly 600/year. While each life lost is tragic, when making policy decisions we have to look at real world risks. Firearm accidents comprise only 0.5% of all fatal accidents, they are far outweighed by deaths from motor vehicle traffic (34%), poisoning(24.1%), falls(18.3%), suffocation(4.8%), drowning(2.8%), and fire/burns(2.7%).
 
