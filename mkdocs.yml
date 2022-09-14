@@ -16,26 +16,7 @@ nav:
   - Literary:
       - literary/recommended-reading.md
   - Blog:
-      - "2016":
-          - 2016/04/12/compiling-open-zwave-control-panel-on-a-raspberry-pi-3/index.md
-      - "2013":
-          - 2013/01/03/smart-guns-dangerously-dumb/index.md
-      - "2011":
-          - 2011/12/06/mail-checker-minus-or-why-are-you-maintaining-a-chrome-extension/index.md
-          - 2011/07/16/conversation-with-a-spam-bot/index.md
-      - "2010":
-          - 2010/11/17/dallas-makerspace-open-house/index.md
-          - 2010/08/19/compiling-bitcoin-on-ubuntu-10-04-lucid/index.md
-      - "2009":
-          - 2009/07/24/phishing-attempt-via-txt/index.md
-          - 2009/07/21/5-tips-on-being-an-effective-linux-admin/index.md
-          - 2009/07/06/windows-7-the-top-5-things-i-like/index.md
-          - 2009/07/06/fail-why-you-should-always-use-visudo/index.md
-          - 2009/07/01/firefox-3-5-impatiently-waiting/index.md
-          - 2009/04/20/tweaking-nagios-for-performance/index.md
-          - 2009/04/14/cooling-off/index.md
-          - 2009/04/09/birth-of-a-monster/index.md
-          - 2009/04/08/terrorists-dont-use-google-maps/index.md
+      - blog/index.md
 extra:
   social:
     - icon: fontawesome/brands/twitter
@@ -46,6 +27,8 @@ extra:
       link: https://www.linkedin.com/in/andrew-lecody-37307148/
 copyright: This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 plugins:
+  - meta
+  - blog
   - glightbox
   - search
   - privacy
