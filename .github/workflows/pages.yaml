@@ -23,6 +23,7 @@ jobs:
         with:
           python-version: "3.10"
       - run: pip install git+https://${{ secrets.GH_TOKEN }}@github.com/squidfunk/mkdocs-material-insiders.git
+      - run: pip install mkdocs-minify-plugin
       - run: mkdocs build
       - uses: actions/upload-pages-artifact@v1
         with:

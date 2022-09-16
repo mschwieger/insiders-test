@@ -32,6 +32,8 @@ plugins:
   - blog
   - search
   - social
+  - minify:
+      minify_html: true
   - privacy
 markdown_extensions:
   # Python Markdown
