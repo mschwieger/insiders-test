@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "website"
+version = "0.1.0"
+description = "https://lickthesalt.com"
+authors = ["Andrew LeCody <andrewlecody@gmail.com>"]
+license = "Creative Commons Attribution 4.0 International"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mkdocs-material = {git = "https://github.com/squidfunk/mkdocs-material-insiders.git"}
+mkdocs-minify-plugin = "^0.5.0"
+Pillow = "^9.2.0"
+CairoSVG = "^2.5.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
