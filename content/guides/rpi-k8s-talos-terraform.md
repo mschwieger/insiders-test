@@ -1,3 +1,7 @@
+---
+description: Build a Kubernetes cluster with Raspberry Pi, Talos and Terraform.
+---
+
 # K8s on RPI with Talos and Terraform
 
 [:octicons-mark-github-16: View repo](https://github.com/aceat64/rpi-k8s-talos-terraform){ .md-button .md-button }

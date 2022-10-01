@@ -1,4 +1,5 @@
 ---
+description: Guide to deploy a static site using Material for MkDocs Insiders on GitHub Pages using Poetry and GitHub Actions
 hide:
   - toc
 ---

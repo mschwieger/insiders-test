@@ -1,3 +1,7 @@
+---
+description: Use your UDM-Pro as an HTTP proxy for multiple sites/services.
+---
+
 # Nginx Proxy Manager on UDM-Pro
 
 <https://nginxproxymanager.com/>

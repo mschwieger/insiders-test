@@ -1,3 +1,7 @@
+---
+description: My personal setup on macOS for development work.
+---
+
 # macOS Setup
 
 Originally I wrote this guide to remind myself how to setup my M1 Macbook the way I like it. A few friends and coworkers expressed interest in my setup, so I cleaned up the notes (a bit) and created this guide. You don't need to follow this guide completely, I encourage you to pick-and-choose the pieces you want to use and to tweak things to fit your needs. I also love to see how other people have setup their systems, so please share your configs!
