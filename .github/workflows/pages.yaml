@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+  # workflow_dispatch allows the site to be rebuilt and published manually if needed
   workflow_dispatch:
 
 # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
@@ -13,16 +14,22 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Running this action on a fork will likely fail anyway
+    # unless the forked repo also has access to material for mkdocs insiders
     if: github.event.repository.fork == false
     steps:
       - uses: actions/checkout@v3
 
+      # The .cache directory is used for 3rd party assets, as part of the privacy plugin.
+      # It is also used to cache the generated social media cards.
+      # Persisting the cache across builds dramatically speeds up the process.
       - name: Load site cache
         uses: actions/cache@v3
         with:
           key: ${{ github.ref }}
           path: .cache
 
+      # We use poetry to manage mkdocs, plugins, etc
       - name: Install poetry
         run: pipx install poetry
 
@@ -31,8 +38,11 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: "3.10"
+          # This ensures the package cache for poetry/pip is persisted, again speeding up this build action.
           cache: "poetry"
 
+      # Insiders is the sponsorware version of Material for MkDocs
+      # https://squidfunk.github.io/mkdocs-material/insiders/
       - name: Configure auth for Insiders
         run: |
           poetry config repositories.github-squidfunk-mkdocs https://github.com/squidfunk/mkdocs-material-insiders.git
@@ -42,6 +52,7 @@ jobs:
       - name: Build site
         run: poetry run mkdocs build
 
+      # Upload the built site as an artifact, this will be used by the deploy job.
       - uses: actions/upload-pages-artifact@v1
         with:
           path: "site"
