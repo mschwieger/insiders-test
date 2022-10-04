@@ -277,7 +277,7 @@ i18n = ["babel (>=2.9.0)"]
 
 [[package]]
 name = "mkdocs-material"
-version = "8.5.6+insiders.4.25.0"
+version = "8.5.6+insiders.4.25.1"
 description = "Documentation that simply works"
 category = "main"
 optional = false
@@ -302,7 +302,7 @@ requests = ">=2.26"
 type = "git"
 url = "https://github.com/squidfunk/mkdocs-material-insiders.git"
 reference = "HEAD"
-resolved_reference = "972c236a665fe6f1d219999fc67bddc12d189065"
+resolved_reference = "4d5c8855a9a6ad722d3abd726e8e73ec684d7ec5"
 
 [[package]]
 name = "mkdocs-material-extensions"
