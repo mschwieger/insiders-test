@@ -1,13 +1,13 @@
 ---
 date: 2016-04-12
 categories: 
-  - "technology"
-  - "tutorials"
+    - "technology"
+    - "tutorials"
 tags: 
-  - "automation"
-  - "linux"
-  - "raspberry-pi"
-  - "zwave"
+    - "automation"
+    - "linux"
+    - "raspberry-pi"
+    - "zwave"
 ---
 
 # Compiling open-zwave-control-panel on a Raspberry Pi 3
@@ -19,6 +19,7 @@ I've recently started diving into home automation stuff, and of course immediate
 After a bunch of searching, I came across a post talking about using open-zwave-control-panel (ozwcp) to diagnose and configure z-wave devices. Awesome! Sadly, the documentation for this project is lacking, and it took a bit of trial and error to figure out the right steps to get ozwcp build, let alone run. Eventually I figured it out, reconfigured my sensor and everything worked. So to save others the frustration of trying to build ozwcp, I've got a quick and simple tutorial for you!
 
 !!! tip "Update"
+
     There's a docker image that's only slightly out of date, I suggest trying that first _before_ going to the effort of compiling ozwcp. If you don't have docker installed, follow one of the many tutorials out there, then run this command (where /dev/ttyUSB0 is your zwave controller):
 
     ``` shell
@@ -68,14 +69,14 @@ cd open-zwave-control-panel
 
 Open the _Makefile_ and find the following line:
 
-```
+``` makefile
 OPENZWAVE := ../
 LIBMICROHTTPD := -lmicrohttpd
 ```
 
 Change it to:
 
-```
+``` makefile
 OPENZWAVE := ../open-zwave
 LIBMICROHTTPD := /usr/local/lib/libmicrohttpd.a
 ```
@@ -93,4 +94,4 @@ And finally, run it!
 ./ozwcp -p 8888
 ```
 
-Now you can open http://your\_system:8888 in a browser to start using the open-zwave-control-panel!
+Now you can open `http://your\_system:8888` in a browser to start using the open-zwave-control-panel!

@@ -134,12 +134,12 @@ If everything worked the Nginx Proxy Manager interface should be available at <h
 
 Default Admin User:
 
-```
+``` text
 admin@example.com
 ```
 
 Default Admin Password:
 
-```
+``` text
 changeme
 ```

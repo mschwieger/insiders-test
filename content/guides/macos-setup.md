@@ -311,37 +311,37 @@ _<https://k9scli.io/>_
 
 1. Install Oh My ZSH:
 
-   ```bash
-   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-   ```
+    ```bash
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
 
 2. Restart iTerm
 3. Install powerlevel10k:
 
-   ```bash
-   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-   ```
+    ```bash
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+    ```
 
 4. Edit `~/.zshrc`, set `ZSH_THEME="powerlevel10k/powerlevel10k"`
 5. Restart iTerm
 6. Follow setup directions from p10k
 7. Install terminal-notifier, required for the `bgnotify` Oh My ZSH plugin:
 
-   ```bash
-   brew install terminal-notifier
-   ```
+    ```bash
+    brew install terminal-notifier
+    ```
 
 8. Install zsh-autosuggestions:
 
-   ```bash
-   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-   ```
+    ```bash
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    ```
 
 9. Install autoupdate:
 
-   ```bash
-   git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins $ZSH_CUSTOM/plugins/autoupdate
-   ```
+    ```bash
+    git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins $ZSH_CUSTOM/plugins/autoupdate
+    ```
 
 10. Install fast-syntax-highlighting:
 
@@ -354,26 +354,26 @@ _<https://k9scli.io/>_
 
     1. Add the following lines to the end of the file:
 
-       ```bash
-       ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-       ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
-       bgnotify_threshold=30
-       ```
+        ```bash
+        ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+        ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+        bgnotify_threshold=30
+        ```
 
     2. Edit the `plugins` setting:
 
-       ```bash
-       plugins=(
-         autoupdate
-         aws
-         bgnotify
-         fast-syntax-highlighting
-         macos
-         terraform
-         safe-paste
-         zsh-autosuggestions
-       )
-       ```
+        ```bash
+        plugins=(
+            autoupdate
+            aws
+            bgnotify
+            fast-syntax-highlighting
+            macos
+            terraform
+            safe-paste
+            zsh-autosuggestions
+        )
+        ```
 
 ### Optional: VS Code Settings
 

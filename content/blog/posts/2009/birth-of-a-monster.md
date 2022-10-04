@@ -1,13 +1,13 @@
 ---
 date: 2009-04-09
 categories: 
-  - "technology"
+    - "technology"
 tags: 
-  - "funny"
-  - "linux"
-  - "raid"
-  - "ubuntu"
-  - "work"
+    - "funny"
+    - "linux"
+    - "raid"
+    - "ubuntu"
+    - "work"
 ---
 
 # Birth of a Monster
@@ -30,6 +30,6 @@ As you can see, I also had to remove the back panel of the firewire cards, since
 
 As of right now I've got mdadm (the Linux software raid utility) building a RAID 6 out of the 1.6TB drives. When I first started building the array I was given an ETA of 1,500 minutes. For those of you that can't do the math in your head (I can't), that's 25 hours! Right now it's at about 80% complete. I'll update this article sometime tomorrow, after I've got the array formatted for ext3,  which will probably take quite awhile.
 
-#### UPDATE
+!!! tip "Update"
 
-The raid finally finished building, in total it took just under 24 hours, it took another 45 minutes to format the partition to ext3. I ran a quick test with hdparm to see how fast the array was, the individual drives are capable of about 70MBps and the array as a whole clocks in at around 150MBps. Not great, but not too bad either, the real test will be seeing how long the array stays online, since the LaCie drives aren't exactly the most robust storage devices.
+    The raid finally finished building, in total it took just under 24 hours, it took another 45 minutes to format the partition to ext3. I ran a quick test with hdparm to see how fast the array was, the individual drives are capable of about 70MBps and the array as a whole clocks in at around 150MBps. Not great, but not too bad either, the real test will be seeing how long the array stays online, since the LaCie drives aren't exactly the most robust storage devices.

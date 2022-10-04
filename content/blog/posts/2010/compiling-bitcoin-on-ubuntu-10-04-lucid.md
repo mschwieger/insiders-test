@@ -58,7 +58,7 @@ sudo checkinstall
 
 You'll probably be prompted to "create a default set of package docs", just go ahead and hit enter. When it prompts you for the package description, just put "wxwidgets" without the quotes and hit enter twice. You should have a screen that looks like this:
 
-```
+``` text
 *****************************************
 **** Debian package creation selected ***
 *****************************************

@@ -2,7 +2,7 @@
 status: new
 description: Guide to deploy a static site using Material for MkDocs Insiders on GitHub Pages using Poetry and GitHub Actions
 hide:
-  - toc
+    - toc
 ---
 
 # Deploy Material for MkDocs Insiders Using GitHub Actions

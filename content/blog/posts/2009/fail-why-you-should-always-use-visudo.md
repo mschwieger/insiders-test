@@ -19,7 +19,7 @@ It's time for a short rant about proper Linux administration. Someone, who shall
 
 When editing the sudoers file you have to be careful, if you make a change that breaks the file you can potentially lock yourself out of being able to fix the file. That's what happened today, after the change to the sudoers file any attempt to use sudo returned this error:
 
-```
+``` text
 >>> sudoers file: syntax error, line 6 <<<
 >>> sudoers file: syntax error, line 8 <<<
 sudo: parse error in /etc/sudoers near line 6
