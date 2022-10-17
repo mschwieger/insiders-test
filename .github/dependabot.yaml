@@ -7,7 +7,7 @@ version: 2
 registries:
   github:
     type: git
-    url: https://github.com/squidfunk/mkdocs-material-insiders
+    url: https://github.com
     username: x-access-token
     password: ${{secrets.GH_TOKEN}}
 updates:
