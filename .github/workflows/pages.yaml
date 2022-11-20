@@ -39,7 +39,7 @@ jobs:
         id: setup-python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          python-version: "3.11"
           # This ensures the package cache for poetry/pip is persisted, again speeding up this build action.
           cache: "poetry"
 
