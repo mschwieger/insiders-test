@@ -21,8 +21,8 @@ nav:
       - blog/index.md
 extra:
   social:
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/andrewlecody
+    - icon: fontawesome/brands/mastodon
+      link: https://social.treehouse.systems/@andrewlecody
     - icon: fontawesome/brands/github
       link: https://github.com/aceat64
     - icon: fontawesome/brands/linkedin
