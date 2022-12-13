@@ -311,14 +311,14 @@ _<https://k9scli.io/>_
 
 1. Install Oh My ZSH:
 
-    ```bash
+    ```shell
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     ```
 
 2. Restart iTerm
 3. Install powerlevel10k:
 
-    ```bash
+    ```shell
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
     ```
 
@@ -327,25 +327,25 @@ _<https://k9scli.io/>_
 6. Follow setup directions from p10k
 7. Install terminal-notifier, required for the `bgnotify` Oh My ZSH plugin:
 
-    ```bash
+    ```shell
     brew install terminal-notifier
     ```
 
 8. Install zsh-autosuggestions:
 
-    ```bash
+    ```shell
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     ```
 
 9. Install autoupdate:
 
-    ```bash
+    ```shell
     git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins $ZSH_CUSTOM/plugins/autoupdate
     ```
 
 10. Install fast-syntax-highlighting:
 
-    ```bash
+    ```shell
     git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git \
      ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
     ```
@@ -354,7 +354,7 @@ _<https://k9scli.io/>_
 
     1. Add the following lines to the end of the file:
 
-        ```bash
+        ```shell
         ZSH_AUTOSUGGEST_STRATEGY=(history completion)
         ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
         bgnotify_threshold=30
@@ -362,7 +362,7 @@ _<https://k9scli.io/>_
 
     2. Edit the `plugins` setting:
 
-        ```bash
+        ```shell
         plugins=(
             autoupdate
             aws
@@ -374,6 +374,15 @@ _<https://k9scli.io/>_
             zsh-autosuggestions
         )
         ```
+
+12. Install fzf for better history searching (ctrl-r):
+
+    ```shell
+    brew install fzf
+
+    # To install useful key bindings and fuzzy completion:
+    $(brew --prefix)/opt/fzf/install
+    ```
 
 ### Optional: VS Code Settings
 
