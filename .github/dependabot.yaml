@@ -15,7 +15,7 @@ updates:
     schedule:
       interval: "daily"
     reviewers:
-      - "aceat64"
+      - "mschwieger"
   - package-ecosystem: "pip"
     insecure-external-code-execution: allow
     directory: "/"
@@ -24,4 +24,4 @@ updates:
     schedule:
       interval: "daily"
     reviewers:
-      - "aceat64"
+      - "mschwieger"
