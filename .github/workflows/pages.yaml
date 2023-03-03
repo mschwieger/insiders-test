@@ -48,7 +48,7 @@ jobs:
       - name: Configure auth for Insiders
         run: |
           poetry config repositories.github-squidfunk-mkdocs https://github.com/squidfunk/mkdocs-material-insiders.git
-          poetry config http-basic.github-squidfunk-mkdocs username ${{ secrets.GH_TOKEN }}
+          poetry config http-basic.github-squidfunk-mkdocs mschwieger ${{ secrets.GH_TOKEN }}
       - name: Install deps
         run: poetry install
       - name: Build site
