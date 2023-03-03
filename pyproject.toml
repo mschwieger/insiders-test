@@ -1,17 +1,16 @@
 [tool.poetry]
-name = "website"
+name = "binbook2023"
 version = "0.1.0"
-description = "https://lickthesalt.com"
-authors = ["Andrew LeCody <andrewlecody@gmail.com>"]
-license = "Creative Commons Attribution 4.0 International"
+description = ""
+authors = ["Mats Schwieger <mats.schwieger@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
 mkdocs-material = {git = "https://github.com/squidfunk/mkdocs-material-insiders.git"}
-mkdocs-minify-plugin = "^0.6.1"
-Pillow = "^9.3.0"
-CairoSVG = "^2.5.2"
+mkdocs-minify-plugin = "^0.6.2"
+pillow = "^9.4.0"
+cairosvg = "^2.6.0"
 
 
 [build-system]
